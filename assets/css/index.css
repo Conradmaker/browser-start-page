@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Nanum+Gothic+Coding:wght@400;700&display=swap");
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  color: white;
+  position: relative;
+  font-family: "Baloo Tamma 2", "Nanum Gothic Coding", serif;
+}
+.bg-img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.darker {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body .left-section {
+  width: 30%;
+  height: 90%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+body .left-section .me-box {
+  flex: 5;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+/*USERNAME*/
+.me-box .form,
+.me-box .greetings {
+  width: 100%;
+  display: none;
+  text-align: center;
+}
+
+.me-box .greetings {
+  font-size: 50px;
+}
+.me-box .showing {
+  display: block;
+  text-shadow: 0 0 10px black;
+}
+.me-box .js-form {
+  width: 80%;
+}
+.js-form input {
+  padding: 10px;
+  font-size: 30px;
+  color: white;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid white;
+  display: block;
+  width: 100%;
+}
+.left-section .weather-box {
+  flex: 10;
+  background-color: rgba(60, 60, 60, 0.3);
+  box-shadow: inset 0 0 50px rgba(80, 80, 80, 0.7);
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.weather-box {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.weather-box .weather-top {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+.weather-top .js-wheather-img {
+  width: 10rem;
+}
+.weather-top .js-wheather-temp {
+  font-size: 50px;
+  text-shadow: 0 0 10px black;
+}
+.weather-top .js-wheather-min-max {
+  font-size: 20px;
+}
+
+.js-wheather-desc {
+  display: inline-block;
+  font-size: 30px;
+  color: #e5e5e5;
+  text-shadow: 0 0 10px black;
+  text-indent: 25px;
+}
+.js-wheather-loc {
+  display: inline-block;
+  margin-left: 70px;
+  font-size: 23px;
+  text-shadow: 0 0 10px black;
+}
+.left-section .bookmark {
+  width: 100%;
+  flex: 4;
+  display: flex;
+  padding: 20px 20px 0px 20px;
+  background-color: rgba(60, 60, 60, 0.3);
+  box-shadow: inset 0 0 50px rgba(80, 80, 80, 0.7);
+
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.bookmark a {
+  flex: 1;
+  height: 80%;
+  align-self: center;
+}
+.bookmark li {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0 0 10px black;
+  transition: all 0.2s ease;
+}
+.bookmark li:hover {
+  text-shadow: 0 0 10px white;
+}
+.bookmark i {
+  display: block;
+  width: 100%;
+  height: 50%;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bookmark .google-icon {
+  background-image: url("https://www.solarwinds.com/-/media/solarwinds/swdcv2/licensed-products/service-desk/integrations/sd-integrations-logo-google-single-sign-on.ashx?la=ko&rev=aab01f816f1c4af5b415d614081150ee&hash=3FBEB4C159C0F0977AFD598AF3064FAE7181162E");
+}
+a .github-icon {
+  background-image: url("https://miro.medium.com/max/318/1*1OKmA2EdGln8O6RCVORgGg.png");
+}
+a .naver-icon {
+  background-image: url("https://clova-phinf.pstatic.net/MjAxODAzMjlfOTIg/MDAxNTIyMjg3MzM3OTAy.WkiZikYhauL1hnpLWmCUBJvKjr6xnkmzP99rZPFXVwgg.mNH66A47eL0Mf8G34mPlwBFKP0nZBf2ZJn5D4Rvs8Vwg.PNG/image.png");
+}
+a .nomad-icon {
+  background-image: url("https://nomadcoders.co/m.svg");
+}
+a .sand-icon {
+  background-image: url("https://ngryman.gallerycdn.vsassets.io/extensions/ngryman/codesandbox-theme/1.1.3/1561895700936/Microsoft.VisualStudio.Services.Icons.Default");
+}
+.bookmark li span {
+  margin-top: 10px;
+}
+.middle-section {
+  width: 30%;
+  height: 90%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.js-todo-form {
+  height: 30%;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.js-todo-form input {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  font-size: 30px;
+  background: none;
+  color: white;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+}
+.js-todo-form button {
+  position: absolute;
+  top: 50%;
+  font-size: 30px;
+  color: white;
+  background: none;
+  right: 0;
+  border: none;
+  cursor: pointer;
+}
+.js-todo-form button:hover {
+  transform: translateY(4px);
+}
+.js-todo-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.js-todo-list li {
+  display: flex;
+  width: 80%;
+  font-size: 24px;
+  height: 30px;
+  padding: 7px 0;
+  text-shadow: 0 0 10px black;
+}
+.js-todo-list li:hover .fa-trash-alt {
+  display: initial;
+}
+.js-todo-list li i {
+  padding: 0 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.js-todo-list li:hover i {
+  text-shadow: 0 0 5px white;
+}
+.js-todo-list li span {
+  flex: 1;
+}
+.js-todo-list li .fa-trash-alt {
+  display: none;
+  color: #e91e63;
+  text-shadow: 0 0 3px #ff94c2;
+}
+ {
+}
+.js-todo-list li {
+}
+.right-section {
+  width: 30%;
+  height: 90%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.js-clock {
+}
+.right-section h2 {
+  font-size: 22px;
+}
+.right-section h1 {
+  font-size: 100px;
+  letter-spacing: 10px;
+  margin: 20px auto;
+  text-shadow: 0 0 30px white;
+}
+.right-section small {
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  align-self: center;
+
+  animation: sec 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes sec {
+  from {
+    text-shadow: 0 0 15px white;
+  }
+  to {
+    text-shadow: 0 0 10px black;
+  }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>- Good Day -</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="darker">
+      <section class="left-section">
+        <div class="me-box">
+          <form class="js-form form">
+            <input type="text" placeholder="What is your name" />
+          </form>
+          <h4 class="js-greetings greetings"></h4>
+        </div>
+        <div class="weather-box">
+          <div>
+            <h1>Whether</h1>
+
+            <div class="weather-top">
+              <img src="" alt="wheaterImg" class="js-wheather-img" />
+              <span class="js-wheather-temp"></span>
+              <span class="js-wheather-min-max"></span>
+            </div>
+            <span class="js-wheather-desc"></span>
+
+            <span class="js-wheather-loc"></span>
+          </div>
+        </div>
+        <ul class="bookmark">
+          
+          <a href="https://www.google.com/">
+            <li><i class="google-icon"></i><span>google</span></li>
+          </a>
+          <a href="https://github.com/">
+            <li><i class="github-icon"></i><span>GitHub</span></li>
+          </a>
+          <a href="https://www.naver.com/">
+            <li><i class="naver-icon"></i><span>Naver</span></li>
+          </a>
+          <a href="https://nomadcoders.co/">
+            <li><i class="nomad-icon"></i><span>Nomad</span></li>
+          </a>
+          <a href=https://codesandbox.io/"">
+            <li><i class="sand-icon"></i><span>SandBox</span></li>
+          </a>
+        </ul>
+      </section>
+      <section class="middle-section">
+        <form class="js-todo-form" action="">
+          <input type="text" placeholder="Today What Todo?" />
+          <button>GO</button>
+        </form>
+        <ul class="js-todo-list"></ul>
+      </section>
+      <section class="right-section">
+        <div class="js-clock">
+          <h2></h2>
+          <h1></h1>
+          <small></small>
+        </div>
+      </section>
+    </div>
+
+    <script src="/assets/js/bg.js"></script>
+    <script src="/assets/js/user.js"></script>
+    <script src="/assets/js/weather.js"></script>
+    <script src="/assets/js/todo.js"></script>
+    <script src="/assets/js/clock.js"></script>
+  </body>
+</html>
